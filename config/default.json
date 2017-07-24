@@ -1,0 +1,21 @@
+{
+  "Mongo": {
+    "host": "mongodb://192.168.99.100:32768"
+  },
+  "RabbitMQ": {
+    "host": "amqp://192.168.99.100:32774",
+    "options": {
+      "durable": true
+    },
+    "queues": [
+      {
+        "name": "user",
+        "key": "user"
+      },
+      {
+        "name": "list",
+        "key": "list"
+      }
+    ]
+  }
+}
